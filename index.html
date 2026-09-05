@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise de indicadores Ultra Popular - Maxi Popular</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="brand-mark">UP</div>
+      <h1>Análise de indicadores</h1>
+      <h2>Ultra Popular - Maxi Popular</h2>
+      <p class="subtitle">Acesso restrito ao relatório</p>
+
+      <form id="loginForm">
+        <label for="username">Usuário</label>
+        <input id="username" type="text" autocomplete="username" placeholder="Digite seu usuário" required>
+
+        <label for="password">Senha</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+
+        <button type="submit">Acessar relatório</button>
+        <div id="errorMessage" class="error-message"></div>
+      </form>
+    </div>
+  </div>
+
+  <main id="dashboardScreen" class="dashboard-screen hidden">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">MAXI POPULAR</div>
+        <h1>Análise de indicadores Ultra Popular</h1>
+      </div>
+      <button id="logoutButton" class="logout">Sair</button>
+    </header>
+
+    <section class="report-container">
+      <iframe
+        title="Relatório Power BI - Ultra Popular"
+        src="https://app.powerbi.com/groups/7be8b08f-f45a-4144-af94-19831032d9c6/reports/1701611f-f630-4bab-b9b6-bf7ff04d961e/4cb0cccdc9263f7acd63?language=pt-BR&experience=power-bi"
+        frameborder="0"
+        allowfullscreen="true">
+      </iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

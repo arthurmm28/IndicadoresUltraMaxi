@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análise de indicadores Ultra Popular - Maxi Popular">
+  <title>Análise de Indicadores | Ultra Popular - Maxi Popular</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <section id="loginScreen" class="login-screen">
+    <div class="login-bg"></div>
+
+    <div class="login-content">
+      <header class="brand">
+        <div class="brand-up">✚ <span>ULTRA<br><small>POPULAR</small></span></div>
+        <div class="divider"></div>
+        <div class="brand-maxi"><span>MAXI</span><br><small>POPULAR</small></div>
+      </header>
+
+      <div class="login-card">
+        <div class="lock">🔒</div>
+        <h1>Análise de Indicadores</h1>
+        <h2>Ultra Popular - Maxi Popular</h2>
+        <p>Digite suas credenciais para acessar o relatório.</p>
+
+        <form id="loginForm">
+          <label for="username">Usuário</label>
+          <div class="input-wrap">
+            <span>♙</span>
+            <input id="username" type="text" autocomplete="username" placeholder="Digite seu usuário" required>
+          </div>
+
+          <label for="password">Senha</label>
+          <div class="input-wrap">
+            <span>🔐</span>
+            <input id="password" type="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+            <button type="button" class="eye" id="togglePassword" aria-label="Mostrar senha">◉</button>
+          </div>
+
+          <button class="access-btn" type="submit">
+            Acessar <span>→</span>
+          </button>
+          <div id="errorMessage" class="error-message"></div>
+        </form>
+      </div>
+
+      <div class="login-features">
+        <div><strong>▥</strong><b>DADOS</b><small>PARA DECISÕES</small></div>
+        <div><strong>♟</strong><b>GESTÃO</b><small>MAIS EFICIENTE</small></div>
+        <div><strong>◎</strong><b>RESULTADOS</b><small>MAIS FORTES</small></div>
+      </div>
+
+      <footer>JUNTOS POR UM FUTURO MAIS SAUDÁVEL</footer>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <main id="dashboardScreen" class="dashboard hidden">
+    <header class="dashboard-topbar">
+      <div class="menu-icon">☰</div>
+      <div class="top-user">♙ <span>Usuário: <strong>81</strong></span></div>
+      <div class="top-separator"></div>
+      <button id="logoutButton" class="logout">⇥ &nbsp; Sair</button>
+    </header>
+
+    <section class="dashboard-heading">
+      <div class="heading-line"></div>
+      <div>
+        <h1>Análise de Indicadores</h1>
+        <h2>Ultra Popular - Maxi Popular</h2>
+      </div>
+      <div class="heading-slogan">INFORMAÇÃO<br>QUE IMPULSIONA<br>RESULTADOS</div>
+    </section>
+
+    <section class="report-shell">
+      <iframe
+        title="Análise de indicadores Ultra Popular - Maxi Popular"
+        src="https://app.powerbi.com/groups/7be8b08f-f45a-4144-af94-19831032d9c6/reports/1701611f-f630-4bab-b9b6-bf7ff04d961e/4cb0cccdc9263f7acd63?language=pt-BR&experience=power-bi"
+        frameborder="0"
+        allowfullscreen="true">
+      </iframe>
+    </section>
+
+    <footer class="dashboard-footer">
+      <div class="footer-title">▥ <span><b>Análise de Indicadores Ultra Popular - Maxi Popular</b><small>Relatório gerencial - Power BI</small></span></div>
+      <div class="footer-links">DADOS &nbsp; | &nbsp; ESTRATÉGIA &nbsp; | &nbsp; CRESCIMENTO</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
